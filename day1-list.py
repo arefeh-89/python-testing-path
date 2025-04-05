@@ -1,7 +1,7 @@
 #practice 1:
 random_numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-filtered_numbers = [x for x in random_numbers if x % 2 == 0]
-print(filtered_numbers)
+even_numbers = [num for num in random_numbers if num % 2 == 0]
+print(even_numbers)
 
 #practice 2:
 names = ["Arefeh","Ashkan","Sara","Reza","Ali"]
