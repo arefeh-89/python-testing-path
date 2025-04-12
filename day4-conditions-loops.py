@@ -44,7 +44,7 @@ multi_x()
 password = "python123"
 rand = 0
 while rand == 0:
-    entered_pass = input("please enter the password")
+    entered_pass = input("please enter the password:")
     if entered_pass == password:
         print("رمز درست وارد شد!")
         rand = 1
