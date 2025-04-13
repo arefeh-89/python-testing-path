@@ -1,0 +1,3 @@
+Python is fun.
+Learning step by step.
+Files are easy!
