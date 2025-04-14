@@ -11,3 +11,8 @@ with open("notes.txt","r") as file:
 name = input("please tell me your name:")
 with open("users.txt","a") as file:
     file.write(f"{name}\n")
+
+#practice 4
+with open("users.txt","r") as file:
+    for line in file.readlines():
+        print(f"Hello {line.strip()}!")
