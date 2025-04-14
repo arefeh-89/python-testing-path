@@ -5,10 +5,11 @@ class Person:
         self.name = name
         self.age = age
 
-    def describ_person(name,age):
-        print(f"Hello, my name is {name} and I'm {age} years old.")
+    def describ_person(self):
+        print(f"Hello, my name is {self.name} and I'm {self.age} years old.")
 
-Person.describ_person("Arefeh","35")
+p = Person("Arefeh","35")
+p.describ_person()
 
 #practice 2
 
@@ -17,7 +18,8 @@ class Book:
         self.title = title
         self.author = author
 
-    def describe_book(title,author):
-        print(f"This book is {title.title()} written by {author.title()}")
+    def describe_book(self):
+        print(f"This book is {self.title.title()} written by {self.author.title()}.")
 
-Book.describe_book("dollor","arefeh rastegarnejad")
+b = Book("dollor","arefeh rastegarnejad")
+b.describe_book()
