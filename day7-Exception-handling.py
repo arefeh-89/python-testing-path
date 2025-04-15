@@ -6,7 +6,9 @@ try:
 except ZeroDivisionError:
     print("The second number should not be zero!")
 except ValueError:
-    print("Yoi should enter a number!")
+    print("You should enter a number!")
+except Exception as ex:
+    print("Something is wrong!")
 else:
     print(result)
 finally:
