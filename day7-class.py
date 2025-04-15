@@ -57,3 +57,34 @@ class Manager(Employee):
 
 m = Manager("baran","3000 $",5)
 m.show_details()
+
+#practice 4
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def info(self):
+        print(f"It's {self.name.title()} and she is {self.age} years old.")
+
+class Employee(Person):
+    def __init__(self,name,age,employee_id,salary):
+        super().__init__(name,age)
+        self.employee_id = employee_id
+        self.salary = salary
+
+    def info(self):
+        super().info()
+        print(f"The employee id is {self.employee_id} and salary is {self.salary}.")
+
+class Developer(Employee):
+    def __init__(self,name,age,salary,employee_id,language):
+        super().__init__(name,age,salary,employee_id)
+        self.language = language
+
+    def show_detail(self):
+        super().info()
+        print(f"She is a {self.language} developer!")
+
+d = Developer("arefeh",35,"5000 $",4355,"Python")
+d.show_detail()
